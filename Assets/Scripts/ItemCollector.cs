@@ -21,6 +21,9 @@ public class ItemCollector : MonoBehaviour
         else if(SceneManager.GetActiveScene().buildIndex == 2){
             totalCherries = 35;
         }
+        else if(SceneManager.GetActiveScene().buildIndex == 3){
+            totalCherries = 42;
+        }
         cherriesText.text = "Cherries: " + currentCherries + "/" + totalCherries;
     }
 

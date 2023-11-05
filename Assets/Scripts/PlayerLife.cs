@@ -36,7 +36,8 @@ public class PlayerLife : MonoBehaviour
         }
     }
 
-    private void Die(){
+    public void Die(){
+        healthBarCurrent.fillAmount = 0f;
         deathSoundEffect.Play();
         rb.bodyType = RigidbodyType2D.Static;
         anim.SetTrigger("death");
